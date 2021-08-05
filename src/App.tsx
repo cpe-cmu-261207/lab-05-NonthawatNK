@@ -1,4 +1,6 @@
 import React from 'react';
+import Head from '../components/Head';
+
 import { useState } from 'react'
 
 function App() {
@@ -11,10 +13,7 @@ function App() {
     <div>
 
       {/* header section */}
-      <div className='flex justify-center items-end space-x-2'>
-        <span className='text-center italic my-2 text-2xl'>Minimal Todo List </span>
-        <span className='text-gray-400 italic my-2 text-xl'>by ...</span>
-      </div>
+        <Head></Head>
 
       {/* todo section */}
       <div className='mx-auto max-w-4xl'>
@@ -55,7 +54,7 @@ function App() {
       </div>
 
       {/* footer section */}
-      <p className='text-center text-gray-400'> ... </p>
+      <p className='text-center text-gray-400'> Copyright </p>
     </div>
   );
 }
